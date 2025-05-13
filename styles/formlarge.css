@@ -1,0 +1,40 @@
+@media (min-width: 38rem) {
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+  display: block; /* change state in small view */
+  flex: 1 1 100%;
+  }
+  .navigation a {
+  text-align: center;
+  }
+
+  #menu {
+      display: none; /* hide hamburger button */
+  }
+      
+  main {
+      display: grid;
+      max-width: 1500px;
+      font-size: 1.2rem;
+      align-self: center;
+  }
+
+  form {
+    gap: 1.5rem;
+    max-width: 500px;
+  
+  }
+
+  label {
+    font-size: 1.1rem;
+  }
+
+  .button {
+      max-width: 350px;
+  }
+
+}
+  

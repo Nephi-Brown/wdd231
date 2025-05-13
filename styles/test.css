@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #194769;
+    color: white;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .profile-pic {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+  
+  .main-nav {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  
+  main {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .course-section, .location-section, .certificate-section {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    padding: 1rem;
+  }
+  
+  .location-section img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .filters button {
+    padding: 0.5rem 1rem;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .course-grid button {
+    padding: 0.75rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cse {
+    background-color: #702f13;
+    color: white;
+  }
+  
+  .wdd {
+    background-color: #702f13;
+    color: white;
+  }
+  
+  footer {
+    background: #194769;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Large screens */
+  @media screen and (min-width: 768px) {
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .certificate-section {
+      grid-column: 1 / span 2;
+    }
+  
+    .course-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }

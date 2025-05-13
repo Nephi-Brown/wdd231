@@ -1,0 +1,226 @@
+:root {
+    --primary-color: #5E14CCB4;
+    --secondary-color: #5e14cc2f;
+    --nav-color: #7706a7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: #333; 
+   
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 10px 20px;
+}
+
+header img {
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+#mode {
+    position: absolute;
+    bottom: 0.05rem;
+    right: 0.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#mode img {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#menu {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+}
+
+button#menu {
+    margin-left: 4px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+nav {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: var(--nav-color);
+    padding: 10px 0;
+}
+
+.navigation {
+    list-style: none;
+    padding: 15px 20px;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.5s ease-in-out;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    margin-left: 4rem;
+}
+
+.navigation a.active {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #3BFF38;
+    background-color: navy;
+    font-weight: 700;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "❎ ";
+}
+  
+main {
+    width: 90%;
+    max-width: 1500px;
+    margin: 2rem auto;
+    padding: 1.2rem;
+    background-color: #5e14cc2a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(232, 228, 228, 0.561);
+}
+
+form, input, label {
+    transition: all 0.3s ease-in-out;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+  
+input, text, select, textarea {
+    padding: 0.8rem;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 4px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    background-color: white;
+}
+
+input[type=text], 
+input[type=range], 
+input[type=radio] {
+    width: 100%;
+}
+
+#alpha:focus, #fruit:focus {
+	background-color: white;
+    border: 4px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+#alpha:valid, #fruit:valid {
+	background-color:  #5e14cc20; 
+}
+#alpha:invalid {
+	background-color:  rgba(232, 170, 170, 0.282);
+	border: 1px solid ;
+}
+#alpha:invalid::before {
+	content: "❌";
+    background-color: rgba(255, 0, 0, 0.435);
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.button {
+    display: inline-block;
+    align-self: center;
+    background-color: rgb(4, 149, 6);
+    color: white;
+    width: 180px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem; /* controls height and horizontal padding */
+    border: none;
+    border-radius: 8px; /* smoother corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+.button:hover {
+    background-color: #003765;
+    transform: scale(1.05); /* optional for a subtle pop effect */
+}
+
+#passwordError {
+    color: red;
+    font-size: 0.9rem;
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+}

@@ -1,0 +1,133 @@
+:root {
+    --primary-color:  #5E14CCB4;
+    --secondary-color: #5e14cc2f;
+    --button: rgb(2, 173, 2);
+}
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr auto;
+    grid-row: auto;
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 10px 20px;
+}
+
+header img {
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+#mode {
+    position: absolute;
+    bottom: 0.05rem;
+    right: 0.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#mode img {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#menu {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+button#menu {
+    margin-left: 4px;
+}
+
+nav {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #7706a7;
+    padding: 10px 0;
+}
+
+.navigation {
+    list-style: none;
+    padding: 15px 20px;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.5s ease-in-out;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    margin-left: 4rem;
+}
+
+.navigation a.active {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #3BFF38;
+    background-color: navy;
+    font-weight: 700;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "❎ ";
+}
+  
+main {
+    text-align: center;
+    width: 90%;
+    max-width: 1500px;
+    margin: 2rem auto;
+    padding: 1.2rem;
+    background-color: #5e14cc2a;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+}
