@@ -1,0 +1,298 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #5E14CCB4;
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 10px 20px;
+}
+
+header img {
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+#mode {
+    position: absolute;
+    bottom: 0.05rem;
+    right: 0.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#mode img {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#menu {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+button#menu {
+    margin-left: 4px;
+}
+
+nav {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #7706a7;
+    padding: 10px 0;
+}
+
+.navigation {
+    list-style: none;
+    padding: 15px 20px;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.5s ease-in-out;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    margin-left: 4rem;
+}
+
+.navigation a.active {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #3BFF38;
+    background-color: navy;
+    font-weight: 700;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "❎ ";
+}
+
+main {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px #7706a7;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+
+.title h1 {
+    text-align: center;
+    font-family: times, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.card,
+.card1 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 0;
+    box-shadow: 0px 5px 10px gray;
+    overflow: hidden;
+    grid-column: 1;
+}
+
+.card, .card1 {
+    line-height: 2rem;
+}
+
+.card-banner, .card1-banner, .card2-banner {
+    background-color: #5E14CCB4;
+    width: 100%;
+    padding-block-start: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.card ul {
+    list-style-type: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.card ul li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; 
+    align-items: center;
+}
+
+.week-block {
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+    margin-left: 30px;
+}
+
+
+.week-label {
+    line-height: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px; 
+    color: black;
+}
+
+.card ul li a {
+    text-decoration: underline;
+    font-weight: normal; 
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.card1 h2 {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.card1 p {
+    margin-left: 30px;
+}
+
+.card1 img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+.caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  .card2 {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    padding: 1rem;
+  }
+  
+  .buttons {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  .completed {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .not-completed {
+    background-color: #d3d3d3;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .filter-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .filter-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .course-grid {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .course-btn {
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    cursor: default;
+  }
+  
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #5E14CCB4;
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+}
