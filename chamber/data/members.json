@@ -1,0 +1,111 @@
+[
+    {
+      "name": "Standard Life",
+      "address": "Standard Life House, 30 Lothian Road, Edinburgh, EH1 2DH, Scotland",
+      "phone": "+44 131 245 3531",
+      "email": "support@standardlife.co.uk",
+      "hours": "Mon–Fri: 8am–6pm",
+      "industry": "Insurance & Investment",
+      "description": "Helping people manage their savings and retirement plans.",
+      "website": "https://www.standardlife.co.uk",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQGaAYY72sgjYXWTcLBh_FE0lQ7F2bWiNyhw&s",
+      "membership": "Gold"
+    },
+    {
+        "name": "University of Edinburgh",
+        "address": "Old College, South Bridge, Edinburgh EH8 9YL, Scotland",
+        "phone": "+44 131 650 1000",
+        "email": "communications.office@ed.ac.uk",
+        "hours": "Mon–Fri: 9am–5pm",
+        "industry": "Education",
+        "description": "A leading international university, consistently ranked among the top institutions globally.",
+        "website": "https://www.ed.ac.uk",
+        "image": "https://www.logo.wine/a/logo/University_of_Edinburgh/University_of_Edinburgh-Logo.wine.svg",
+        "membership": "Gold"
+    },
+    {
+      "name": "Apple",
+      "address": "10 Princes Street, Edinburgh EH2 2AN, Scotland",
+      "phone": "+44 131 242 8200",
+      "email": "edinburgh-store@apple.com",
+      "hours": "Mon–Sat: 9am–6pm, Sun: 11am–5pm",
+      "industry": "Technology",
+      "description": "Retail store for Apple’s latest devices and support services.",
+      "website": "https://www.apple.com/uk/retail/princesstreet/",
+      "image": "https://www.pixartprinting.it/blog/wp-content/uploads/2024/02/2_Logo-apple-arcobaleno-1977.jpg",
+      "membership": "Gold"
+    },
+    
+    {
+        "name": "Leonardo",
+        "address": "Crewe Toll, Edinburgh EH5 2XS, Scotland",
+        "phone": "+44 131 343 2000",
+        "email": "info@leonardocompany.com",
+        "hours": "Mon–Fri: 9am–5pm",
+        "industry": "Aerospace & Defence",
+        "description": "High-tech company in aerospace, defence and security.",
+        "website": "https://www.leonardo.com",
+        "image": "https://logos-world.net/wp-content/uploads/2023/05/Leonardo-Logo.png",
+        "membership": "Gold"
+      },
+    {
+        "name": "RBS",
+        "address": "36 St Andrew Square, Edinburgh EH2 2YB, Scotland",
+        "phone": "+44 345 724 2424",
+        "email": "contact@rbs.co.uk",
+        "hours": "Mon–Fri: 9am–5pm",
+        "industry": "Finance",
+        "description": "Providing banking and financial services across the UK.",
+        "website": "https://www.rbs.co.uk",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6nkjnhCYVE3nDpxvTWMv6zGMYWDzqAw0L6w&s",
+        "membership": "Gold"
+      },
+    {
+      "name": "IBM",
+      "address": "144 Morrison Street, Edinburgh EH3 8BR, Scotland",
+      "phone": "+44 131 300 3000",
+      "email": "scotland.office@ibm.com",
+      "hours": "Mon–Fri: 9am–6pm",
+      "industry": "Technology & Consulting",
+      "description": "Delivering enterprise solutions and digital transformation services.",
+      "website": "https://www.ibm.com/contact/uk/en/",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg",
+      "membership": "Silver"
+    },
+    {
+      "name": "Baillie Gifford",
+      "address": "Calton Square, 1 Greenside Row, Edinburgh EH1 3AN, Scotland",
+      "phone": "+44 131 275 2000",
+      "email": "enquiries@bailliegifford.com",
+      "hours": "Mon–Fri: 8.30am–5.30pm",
+      "industry": "Investment Management",
+      "description": "Independent investment management firm headquartered in Edinburgh.",
+      "website": "https://www.bailliegifford.com",
+      "image": "https://www.icgn.org/sites/default/files/styles/open_graph_image/public/2021-11/Baillie%20Gifford.jpg?h=866bc933&itok=KLKutLXO",
+      "membership": "Gold"
+    },
+    {
+        "name": "Foundever",
+        "address": "Calder House Pentland Gait, 599 Calder Road, Edinburgh, Scotland",
+        "phone": "+44 131 247 7700",
+        "email": "info.uk@foundever.com",
+        "hours": "Mon–Fri: 8am–6pm",
+        "industry": "Customer Experience Services",
+        "description": "Global leader in customer service and outsourcing solutions.",
+        "website": "https://foundever.com/locations/united-kingdom/",
+        "image": "https://www.intelligentsourcing.net/wp-content/uploads/2023/05/foundeverhpp.png",
+        "membership": "Silver"
+    },
+    {
+        "name": "Microsoft",
+        "address": "Waverley Gate, 2-4 Waterloo Place, Edinburgh EH1 3EG, Scotland",
+        "phone": "+44 344 800 2400",
+        "email": "edinburgh.office@microsoft.com",
+        "hours": "Mon–Fri: 9am–5pm",
+        "industry": "Technology",
+        "description": "Global leader in software, cloud computing, and AI services.",
+        "website": "https://www.microsoft.com/en-gb/about/offices/edinburgh/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTndwc7x1N3PyJIQosyxIssvu5yLKlCerv4hQ&s",
+        "membership": "Gold"
+    }
+  ]
