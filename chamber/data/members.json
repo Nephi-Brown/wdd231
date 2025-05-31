@@ -61,18 +61,6 @@
         "membership": "Gold"
       },
     {
-      "name": "IBM",
-      "address": "144 Morrison Street, Edinburgh EH3 8BR, Scotland",
-      "phone": "+44 131 300 3000",
-      "email": "scotland.office@ibm.com",
-      "hours": "Mon–Fri: 9am–6pm",
-      "industry": "Technology & Consulting",
-      "description": "Delivering enterprise solutions and digital transformation services.",
-      "website": "https://www.ibm.com/contact/uk/en/",
-      "image": "https://1000logos.net/wp-content/uploads/2017/02/IBM-Logo-1972.jpg",
-      "membership": "Silver"
-    },
-    {
       "name": "Baillie Gifford",
       "address": "Calton Square, 1 Greenside Row, Edinburgh EH1 3AN, Scotland",
       "phone": "+44 131 275 2000",
