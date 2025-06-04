@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 230 - Edinburgh Chamber of Commerce: Booking Event Form by Kim Brown, Web Development, JavaScript, CSS, HTML">
+    <meta name="author" content="Kim Kathleen Brown">
+    <title>Edinburgh Chamber of Commerce: Booking Event Form</title>
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mclellaninternational.github.io/wdd230/chamber/images/edin.png">
+    <meta property="og:url" content="https://mclellaninternational.github.io/wdd230/chamber">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/bookeventbase.css">
+    <link rel="stylesheet" href="styles/bookeventlarger.css"> 
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/hamButton.js" defer></script>
+    <script src="scripts/modeButton.js" defer></script>
+    <script src="scripts/timeStamp.js" defer></script>
+    <script src="scripts/bookEvent.js" defer></script>
+    <script src="scripts/wayfinder.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/edlogo.webp" alt="Kim" loading="lazy" width="80" height="80">
+        <h1>Edinburgh Chamber of Commerce: Booking Event Form</h1>
+        <div>
+            <button id="mode" aria-label="Toggle Dark Mode">
+                <span id="modeIcon">◐</span>
+            </button>
+        </div>
+    </header>
+    <div class="nav-section">     
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+            <nav class="header-nav">
+            <ul class="navigation">
+                <li><a href="index.html" title="index" class="active">Home</a></li>
+                <li><a href="discover.html" title="discover">Discover</a></li>
+                <li><a href="directory.html" title="directory">Directory</a></li>
+                <li><a href="index.html" title="join">Join</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <nav id="breadcrumb" class="breadcrumb">
+        <a href="/wdd230/chamber/">Home</a>
+    </nav>
+    
+    <main>
+        <h2>Book an Event</h2>
+        <form id="bookEvent" method="get" action="bookeventconfirm.html">
+            <fieldset>
+                <label for="name">Full Name: <span class="required">* </span></label>
+                <input type="text" id="name" placeholder="e.g., Jane Doe" required>
+
+                <label for="phone">Contact Number: <span class="required">* </span></label>
+                <input type="tel" id="phone" placeholder="e.g., 0123-456-7890" required>
+
+                <label for="event">Select Event: <span class="required">*</span></label>
+                <select id="event" required>
+                    <option value="">--Choose an Event--</option>
+                    <option value="Business Networking">Business Networking</option>
+                    <option value="Training: Exporting">Practical Guide to Exporting</option>
+                    <option value="Digital Marketing">Effective Digital Marketing Strategies in 2025</option>
+                    <option value="CEO Briefing">Partner & Corporate Roundtable:CEO Briefing</option>
+                    <option value="Lunch & Learn">Lunch & Learn: Boosting Workplace Performance</option>
+                </select>
+            </fieldset>
+            <div class="button-wrapper">
+                <button type="submit" class="book-now">Submit</button>
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+      <p>Contact Us: Phone:0123-456-7890</p>
+      <p>Email: info@edinburghchamberofcommerce.com</p>
+      
+      <nav class="footer-nav">
+          <ul><Li><a href="images/homew.webp">Wireframe</a></Li></ul> 
+      </nav> 
+      <p>&copy; <span id="currentyear"></span> 🏴󠁧󠁢󠁳󠁣󠁴󠁿 WDD230 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Kim Kathleen Brown 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Edinburgh,Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿</p>
+      <p id="lastModified"></p>
+  </footer>
+
+</body>
+
+</html>

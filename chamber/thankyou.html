@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 231 - Edinburgh Chamber of Commerce: Thank-you message by Nephi Brown, Web Development, JavaScript, CSS, HTML">
+    <meta name="author" content="Nephi Brown">
+    <title>Edinburgh Chamber of Commerce: Thank-You</title>
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="WDD 231 - Edinburgh Chamber of Commerce: Thank You page by Nephi Brown, Web Development, JavaScript, CSS, HTML, JSON">
+    <meta property="og:image" content="https://nephi-brown.github.io/wdd23q/chamber/images/edlogo.webp">
+    <meta property="og:url" content="https://nephi-brown.github.io/wdd231/chamber/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/thanks.css">
+    <link rel="stylesheet" href="styles/thanks-large.css"> 
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hambutton.js" defer></script>
+    <script src="scripts/wayfinder.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/edlogo.webp" alt="Nephi" loading="lazy" width="80" height="80">
+        <p>Edinburgh Chamber of Commerce: Thank-You</p>
+    </header>
+    <div class="nav-section">     
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+            <nav class="header-nav">
+            <ul class="navigation">
+                <li><a href="index.html" title="index" class="active">Home</a></li>
+                <li><a href="discover.html" title="discover">Discover</a></li>
+                <li><a href="directory.html" title="directory">Directory</a></li>
+                <li><a href="index.html" title="join">Join</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <nav id="breadcrumb" class="breadcrumb">
+        <a href="/wdd231/chamber/">Home</a>
+    </nav>
+
+    <main>
+        <h1>Edinburgh Chamber of Commerce: Thank-You</h1>
+        <h1>Thank You for Applying!</h1>
+        <h2>Welcome! We appreciate your interest in becoming a member of our Chamber of Commerce. We'll be in touch soon!</h2>
+    
+        <input type="hidden" name="timeStamp" id="timeStamp">
+
+    </main> 
+    <footer>
+        <p>Contact Us: Phone:0123-456-7890</p>
+        <p>Email: info@edinburghchamberofcommerce.com</p>
+        
+        <p>&copy; <span id="currentyear"></span> ★ Nephi Brown ★ York, UK</p>
+        <p id="lastModified"></p>
+    </footer>    
+</body>
+
+</html>

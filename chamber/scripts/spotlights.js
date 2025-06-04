@@ -56,6 +56,10 @@ function displaySpotlights(members, container) {
         logo.style.width = "220px";
         logo.style.height = "80px";
         break;
+      case "IBM":
+        logo.style.width = "210px";
+        logo.style.height = "70px";
+        break;
       case "Foundever":
         logo.style.width = "280px";
         logo.style.height = "80px";
