@@ -1,0 +1,24 @@
+/* Media Query for Large Screens */
+@media screen and (min-width: 1024px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}

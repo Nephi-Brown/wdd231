@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development by Kim Brown, Web Development, JavaScript, CSS, HTML">
+    <meta name="author" content="Kim Brown">
+    <title>Kim Brown - WDD 230 - Web Frontend Development</title>
+    <meta property="og:title" content="Kim Kathleen Brown">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero.webp">
+    <meta property="og:url" content="https://mclellaninternational.github.io/wdd230/index.html">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="bookmark" href="week02/bom.html" title="Book of Mormon - Top 10">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/hamButton.js" defer></script>
+    <script src="scripts/modeButton.js" defer></script>
+    <script src="week02/scripts/favChap.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/localStorage.js" defer></script>
+    <script src="scripts/links.js"></script>
+</head>
+    
+<body>
+    <header>
+        <img src="images/profile1.webp" alt="Kim" loading="lazy" width="90" height="84">
+        <span>Kim Kathleen Brown</span>
+        <div id="mode">
+            <img src="images/dark.webp" alt="dark mode" id="darkBtn" loading="lazy" width="44" height="44">
+        </div>
+    </header>
+    <button type="button" id="menu"></button>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" title="index" class="active">Home</a></li>
+            <li><a href="chamber/index.html" title="chamber">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html" title="chamber-site-plan">Site Plan</a></li>
+            <li><a href="form.html" title="form">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                <source srcset="images/hero-large.webp" media="(min-width: 401px)">
+                <img src="images/hero-large.webp" alt="Temple image" loading="lazy" width="500" height="250">
+            </picture>
+            <span>Rome Italy Temple</span>
+        </div>
+        <div class="title">
+            <h1>WDD 230: Web Frontend Development</h1> 
+        </div>
+
+        <section class="card">
+            <div class="card-banner">
+                <h2>Learning Activities</h2>
+            </div>
+            <div id="activities"></div>
+        </section>
+
+        <section class="card1">
+            <div class="card1-banner">
+                <h2>Information</h2>
+            </div>
+            <div class="weather-container">
+                <div class="weather-label">
+                    <h3>Local Weather</h3>  
+                </div>
+                <div class="weather-info"></div>
+            </div>
+            <div class="visit">
+                <p><span class="label">Number of Page Visits: </span><span class="visits"></span></p>
+            </div>
+        </section>
+        
+        <div class="edin-map">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12165.713780083488!2d-3.2087305718971577!3d55.946196575763246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b800a5982623%3A0x64f2147b7ce71727!2sEdinburgh!5e0!3m2!1sen!2suk!4v1742418591624!5m2!1sen!2suk" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Kim Brown 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Edinburgh,Scotland
+            🏴󠁧󠁢󠁳󠁣󠁴󠁿</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 231 - Edinburgh Chamber of Commerce by Nephi Brown, Web Development, JavaScript, CSS, HTML, JSON">
+    <meta name="author" content="Nephi Brown">
+    <title>Edinburgh Chamber of Commerce</title>
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="WDD 231 - Edinburgh Chamber of Commerce: Home page by Nephi Brown, Web Development, JavaScript, CSS, HTML, JSON">
+    <meta property="og:image" content="https://nephi-brown.github.io/wdd23q/chamber/images/edlogo.webp">
+    <meta property="og:url" content="https://nephi-brown.github.io/wdd231/chamber/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/bookevent.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hambutton.js" defer></script>
+    <script src="scripts/modebutton.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/carousel.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+</head>
+
+<body>
+    <div id="meetGreetBanner" class="banner hidden">
+        <span id="bannerMessage"></span>
+        <button class="close-btn" onclick="closeBanner()">❌</button>
+    </div>
+    <header>
+        <img src="images/edlogo.webp" alt="Nephi" loading="lazy" width="80" height="80">
+        <h1>Edinburgh Chamber of Commerce</h1>
+        <div> 
+            <button id="mode" aria-label="Toggle Dark Mode">
+                <span id="modeIcon">◐</span>
+            </button>
+        </div>
+    </header>
+    <div class="nav-section">
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+        <nav class="header-nav">
+            <ul class="navigation">
+                <li><a href="index.html" title="index" class="active">Home</a></li>
+                <li><a href="discover.html" title="discover">Discover</a></li>
+                <li><a href="directory.html" title="directory">Directory</a></li>
+                <li><a href="join.html" title="join">Join</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section id="welcome">
+            <div class="profile-carousel">
+                <img src="images/hero.webp" alt="Edinburgh">
+                <img src="images/edin1.webp" alt="Edinburgh - alternate">
+                <img src="images/edin2.webp" alt=" Edinburgh - alternate">
+                <img src="images/edin3.webp" alt=" Edinburgh - alternate">
+                <img src="images/edin4.webp" alt=" Edinburgh - alternate">
+            </div>
+
+            <h2>Welcome to our Chamber</h2>
+
+            <h3>Empowering Businesses, Fostering Community growth, Championing Eco-sustainability, the Edinburgh Chamber
+                of Commerce is dedicated to driving economic prosperity, innovation, and responsible business practices
+                for a thriving and sustainable future.</h3>
+            <a href="join.html" class="cta-button">Join Now</a>
+        </section>
+
+        <section id="podcast">
+            <h2>Podcast</h2>
+            <div class="podcast-player">
+                <iframe src="https://www.youtube.com/embed/_wjzerPkdRo?si=oA64fpfr4g2s9iXf" title="YouTube video player"
+                    loading="lazy" width="400" height="215"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <h3>Stay tuned for upcoming networking and training events.</h3>
+
+            <div class="events-container">
+                <div class="event-box">
+                    <img src="images/event1.webp" alt="Exporting Event">
+                    <h3>Practical Guide to Exporting</h3>
+                    <p><strong>Date:</strong> 19/04/2025</p>
+                    <p><strong>Time:</strong> Virtual</p>
+                    <p>Expand your business beyond Edinburgh with our step-by-step guide to exporting. Equipping
+                        beginners, growing businesses with the essential skills to navigate international trade
+                        confidently, covering export documentation, shipment management and effective buyer
+                        communication. Breaking down the complexities of exporting helps businesses streamline
+                        operations, avoid costly mistakes and achieve export success while staying competitive in the
+                        global market.</p>
+                    <a href="bookevent.html" class="book-now">Book Now</a>
+                </div>
+                <div class="event-box">
+                    <img src="images/event3.webp" alt="Digital Marketing Event">
+                    <h3>Effective Digital Marketing Strategies in 2025</h3>
+                    <p><strong>Date:</strong> 25/04/2025</p>
+                    <p><strong>Time:</strong> Virtual</p>
+                    <p>Stay ahead in digital marketing with the latest trends and strategies from industry leaders at
+                        Clean Digital. Leverage data-driven insights and emerging technologies to maximize their reach
+                        and optimize advertising performance. Explore the future of online advertising, including Google
+                        Ads, Meta’s expanding audience, advanced eCommerce strategies, latest trends in connected TV and
+                        programmatic advertising.</p>
+                    <a href="bookevent.html" class="book-now">Book Now</a>
+                </div>
+            </div>
+
+            <div class="events-container">
+                <div class="event-box">
+                    <img src="images/event4.webp" alt="CEO Briefing">
+                    <h3>Partner & Corporate Roundtable: CEO Briefing</h3>
+                    <p><strong>Date:</strong> 27/04/2025</p>
+                    <p><strong>Time:</strong> 10:30</p>
+                    <p><strong>Venue: </strong>Edinburgh</p>
+                    <p>CEO Briefing provides a unique opportunity for senior executives to gain strategic insights,
+                        staying informed about key business policies initiatives and advocacy efforts led by the
+                        Edinburgh Chamber while also contributing their perspectives on economic priorities, the 2026
+                        Scottish Elections and shaping policies that support Edinburgh’s business community bedst
+                        interests at the highest levels.</p>
+                    <a href="bookevent.html" class="book-now">Book Now</a>
+                </div>
+
+                <div class="event-box">
+                    <img src="images/event2.webp" alt="Lunch & Learn Event">
+                    <h3>Lunch & Learn: Boosting Workplace Performance</h3>
+                    <p><strong>Date:</strong> 03/05/2025</p>
+                    <p><strong>Time:</strong> 13:00</p>
+                    <p><strong>Venue: </strong>Edinburgh</p>
+                    <p>Join Thomas Franks for insights on enhancing focus, motivation, and creativity in the workplace
+                        through neuroscience, nutrition, and lifestyle strategies. Key factors influencing the rewiring
+                        of the brain for peak performance, boosting productivity, overcoming procrastination, and
+                        staying engaged at work will be explored, along with practical techniques to implement these
+                        strategies effectively.</p>
+                    <a href="bookevent.html" class="book-now">Book Now</a>
+                </div>
+            </div>
+            <div class="weather-container">
+                <img src="images/weather.webp" alt="Edinburgh">
+                <div class="weather-label">
+                    <h2>Local Weather</h2>
+                    <p id="local-time"></p>
+                    <p id="humidity"></p>
+                    <p id="wind"></p>
+                    <p id="current-temp"></p>
+                    <p id="current-desc"></p>
+                    <img id="weather-icon" alt="weather icon" src="#">
+                </div>
+            </div>
+            <div>
+                <div class="fc">
+                    <h2>3-Day Weather Forecast</h2>
+                    <div id="forecast"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="company-spotlights">
+            <h2>Company Spotlights</h2>
+            <article class="launchpad">
+                <h3>Launchpad Build</h3>
+                <h4>Edinburgh's AI Trade Success</h4>
+                <p>Amidst the cobbled streets and gothic spires of Edinburgh, a new frontier of innovation is unfolding.
+                    One where robotics and artificial intelligence shape the future. In December 2024, the rhythmic whir
+                    of machinery and the soft hum of servers filled the halls of Launchpad Build, an AI powerhouse
+                    expanding from Los Angeles to Scotland’s capital. Backed by a £2 million Scottish Enterprise grant,
+                    their sleek new R&D hub is a beacon of technological ambition, drawing the brightest minds to
+                    develop next-generation automation. The air crackles with the energy of creation as engineers and
+                    programmers fine-tune robotic algorithms, their screens aglow with the promise of breakthroughs that
+                    will redefine industries worldwide. More than just a business expansion, Launchpad’s presence
+                    cements Edinburgh’s reputation as a global tech leader, where historic charm meets the cutting edge
+                    of human ingenuity. </p>
+            </article>
+
+            <article class="windpower">
+                <h3>Wind Power Farms</h3>
+                <h4>Global Energy Sellers</h4>
+                <p>Beneath the vast, sweeping skies of Scotland’s rugged coastline, colossal wind turbines turn with
+                    steady grace, harnessing the untamed power of the North Sea. Once a land of oil and gas dominance,
+                    Scotland has transformed into a renewable energy titan, with its wind farms now generating surplus
+                    electricity capable of powering millions of homes beyond its borders. In recent years, Scotland has
+                    exported record-breaking amounts of clean energy to Europe, with interconnectors linking its
+                    offshore wind farms to countries hungry for sustainable power. The deep hum of rotating blades and
+                    the crisp scent of salt in the coastal air serve as reminders of this energy revolution. One that
+                    positions Scotland as a global leader in the transition to net zero. As wind-whipped waves crash
+                    against the shores, Scotland’s energy is no longer just fuelling its own progress; it’s lighting up
+                    cities across the continent, proving that the future of global power is clean, green, and undeniably
+                    Scottish.</p>
+            </article>
+
+            <article class="carbon">
+                <h3>Carbon Removers</h3>
+                <h4>Sustainability Success</h4>
+                <p>Deep in the heart of Scotland’s green energy revolution, Carbon Removers is sculpting a future where
+                    the air we breathe is clearer and more sustainable. With the hum of innovation echoing from their
+                    Edinburgh headquarters, this pioneering firm has mastered the art of engineered carbon removal,
+                    transforming Scotland’s abundant biomass into a powerful tool for reversing emissions. In 2024,
+                    their groundbreaking partnership with the Danish government propelled them onto the global stage,
+                    securing contracts to deliver biogenic carbon removal credits—a monumental step in Europe’s fight
+                    for a net-zero future. Each molecule of CO₂ they capture is permanently stored deep beneath the
+                    North Sea, ensuring that what once polluted our skies now fuels a cleaner tomorrow. Scents of damp
+                    earth lingers in the air at their sequestration sites, a quiet testament to their work turning
+                    atmospheric waste into a lifeline for the planet.</p>
+            </article>
+            <section id="member-spotlights">
+                <h2>Member Spotlights</h2>
+                <div id="dynamic-spotlights"></div>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+        <p>Contact Us: Phone:0123-456-7890</p>
+        <p>Email: info@edinburghchamberofcommerce.com</p>
+
+        <nav class="footer-nav">
+            <ul>
+                <Li><a href="images/homew.webp">Wireframe</a></Li>
+            </ul>
+        </nav>
+
+        <p>&copy; <span id="currentyear"></span> ★ Nephi Brown ★ York, UK</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
