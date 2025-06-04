@@ -1,0 +1,27 @@
+@media screen and (min-width: 760px) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+
+    .navigation.show {
+        flex-direction: row;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main h1 {
+        text-align: center;
+        margin: 100px;
+    }
+        
+}

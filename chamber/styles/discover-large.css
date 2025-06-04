@@ -1,0 +1,143 @@
+@media screen and (min-width: 760px) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+
+    .navigation.show {
+        flex-direction: row;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto auto auto;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        gap: 5px;
+    } 
+
+    .video {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 3px;
+    }
+
+    .video h2 {
+        margin-top: 30px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .video-wrapper {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .video-player iframe {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .festivals {
+        grid-column: 1;
+        grid-row:2;
+    }
+    
+    .festivals h2,
+    .festivals p {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .festivals p {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .festivals img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .calendar-container {
+        margin-top: 150px;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 600px;
+        max-height: 375px
+    }
+ 
+    .visits-container {
+        margin-top: 40px;
+        width: 100%;
+        right: auto;
+        top: auto;
+        grid-column: 1/ span 2;
+        grid-row: 4; 
+        margin-left: 2%;
+    }
+
+    header h1 {
+        grid-column: 2;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-left: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .gallery { 
+        grid-column: 2;
+        grid-row: 1/ span 4;
+        margin-left: 15%;
+        margin-right: auto;
+    }
+
+    .gallery figure {
+        width: 100%;        
+        height: auto;
+        margin: 20px;
+        padding: 2rem;
+        background: #fff;
+        border-radius: 15px 150px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        flex-direction: row;
+    }
+
+    .gallery figure img {
+        width: 100%;
+        height: auto;
+        max-width: 1500px;
+        margin-bottom: 0.5rem;
+        gap: 1rem;
+        flex-direction: row;
+    }
+
+    .gallery .label {
+        flex-direction: row;
+    }
+
+    .gallery figure:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        border: 7px solid royalblue;
+        box-shadow: 7px 10px 10px rgba(4, 191, 11, 0.942);
+    }
+
+}
