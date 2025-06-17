@@ -1,0 +1,8 @@
+{
+    "items": [
+      { "title": "The Legend of Zelda: Tears of the Kingdom", "category": "Game", "review": "An epic adventure with endless exploration and creativity." },
+      { "title": "Dune: Part Two", "category": "Movie", "review": "Stunning visuals and deep world-building in this sci-fi epic." },
+      { "title": "Stranger Things", "category": "TV Show", "review": "Nostalgic, creepy, and thrilling — a must-watch Netflix series." },
+      { "title": "Fourth Wing", "category": "Book", "review": "A gripping fantasy novel with rich characters and intense plot twists." }
+    ]
+  }

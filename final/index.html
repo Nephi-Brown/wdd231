@@ -8,7 +8,7 @@
   content="wdd 231- MediaMosaic: Home, Reviews and updates on games, movies, TV shows, and books." />
   <meta name="author" content="Nephi Brown">
   <title>MediaMosaic</title>
-  <meta property="og:title" content="Chamber of Commerce">
+  <meta property="og:title" content="MediaMosaic">
     <meta property="og:type" content="website">
     <meta property="og:description" content="WDD 231 - Final Project: Home Page by Nephi Brown, Web Development, JavaScript, CSS, HTML, JSON">
     <meta property="og:image" content="https://nephi-brown.github.io/wdd231/final/images/sitelogo.png">
@@ -26,18 +26,18 @@
     <img src="images/sitelogo.png" alt="MediaMosaic Logo" class="logo" />
     <h1>MediaMosaic</h1>
     <nav class="nav-desktop">
-        <button class="nav-link" data-page="home" onclick="navigate('index.html')">Home</button>
-        <button class="nav-link" data-page="reviews" onclick="navigate('reviews.html')">Reviews</button>
-        <button class="nav-link" data-page="contact" onclick="navigate('contact.html')">Contact</button>
-      </nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
     <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
   </header>
 
   <nav id="mobile-menu" class="hidden">
     <ul>
-      <li><a href="#" class="nav-link" data-page="home" onclick="navigate('home')">Home</a></li>
-      <li><a href="#" class="nav-link" data-page="reviews" onclick="navigate('reviews')">Reviews</a></li>
-      <li><a href="#" class="nav-link" data-page="contact" onclick="navigate('contact')">Contact</a></li>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
     </ul>
   </nav>
 

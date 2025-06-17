@@ -1,0 +1,114 @@
+:root {
+    --primary: #1A1A1A;
+    --secondary: #946800;
+    --font: 'Roboto', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font);
+    margin: 0;
+    background-color: #fff;
+    color: var(--primary);
+  }
+  
+  header {
+    background-color: var(--secondary);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .nav-desktop a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+  
+  .nav-link.active {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+  }
+  
+  #mobile-menu a {
+    display: block;
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  #mobile-menu a.active {
+    background-color: var(--primary);
+  }
+  .nav-link.active {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+  }
+  
+  #menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  #mobile-menu {
+    background-color: var(--secondary);
+    text-align: center;
+  }
+  
+  #mobile-menu.hidden {
+    display: none;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  form {
+    background-color: var(--secondary);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  form button {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  footer {
+    background-color: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-desktop {
+      display: none;
+    }
+    #menu-toggle {
+      display: block;
+    }
+  }
