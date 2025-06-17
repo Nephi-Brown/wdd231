@@ -30,59 +30,53 @@
 
 <body>
     <header>
-      <img src="images/edlogo.webp" alt="Edinburgh Chamber of Commerce Logo" loading="lazy" width="80" height="80">
-      <h1>Discover Edinburgh Chamber of Commerce</h1>
+        <img src="images/edlogo.webp" alt="Nephi" loading="lazy" width="80" height="80">
+        <p>Edinburgh Chamber of Commerce: Discover</p>
     </header>
-  
-    <nav class="nav-section" aria-label="Main Navigation">
-      <button id="menu" aria-label="Toggle navigation menu"></button>
-      <nav class="header-nav">
-        <ul class="navigation">
-          <li><a href="index.html" title="Home" class="active">Home</a></li>
-          <li><a href="discover.html" title="Discover">Discover</a></li>
-          <li><a href="directory.html" title="Directory">Directory</a></li>
-          <li><a href="join.html" title="Join">Join</a></li>
-        </ul>
-      </nav>
-    </nav>
-  
-    <nav id="breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/wdd231/chamber/">Home</a>
-      <span aria-current="page">Discover</span>
+    <div class="nav-section">
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+        <nav class="header-nav">
+            <ul class="navigation">
+                <li><a href="index.html" title="index" class="active">Home</a></li>
+                <li><a href="discover.html" title="discover">Discover</a></li>
+                <li><a href="directory.html" title="directory">Directory</a></li>
+                <li><a href="join.html" title="join">Join</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <nav id="breadcrumb" class="breadcrumb">
+        <a href="/wdd231/chamber/">Home</a>
     </nav>
 
     <main>
-        <h1>Edinburgh Chamber of Commerce: Discover</h1>
-        <section class="video" aria-labelledby="facts-heading">
-            <h2 id="facts-heading">Facts About Edinburgh</h2>
+        <h1><font style="font-size:0px">Edinburgh Chamber of Commerce: Discover</font></h1>
+        <section class="video">
+            <h2>Facts About Edinburgh</h2>
             <div class="video-wrapper">
-              <iframe src="https://www.youtube.com/embed/zZ0udJEwbHs"
-                title="How Big Is Edinburgh? - United Kingdom Explorers" loading="lazy" width="400" height="250"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/zZ0udJEwbHs"
+                    title="How Big Is Edinburgh? - United Kingdom Explorers" loading="lazy"  width="400" height="250"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="video-wrapper">
-              <iframe src="https://www.youtube.com/embed/GDIgSuDOfks"
-                title="Kim McAllister - Why is Scotland the best place to start a business?" loading="lazy" width="400"
-                height="250"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+                <iframe src="https://www.youtube.com/embed/GDIgSuDOfks"
+                    title="Kim McAllister - Why is Scotland the best place to start a business?" loading="lazy"
+                    width="400" height="250" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>    
             <div class="video-wrapper">
-              <iframe src="https://www.youtube.com/embed/VK6tzlvr8bo"
-                title="Graduate Stories | Setting up a business in Scotland after University" loading="lazy" width="400"
-                height="250"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/VK6tzlvr8bo"
+                    title="Graduate Stories | Setting up a business in Scotland after University" loading="lazy" width="400" height="250"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-          </section>
-
-        <section class="festivals" aria-labelledby="festivals-heading">
-            <h2 id="festivals-heading">Festivals - Edinburgh's Cultural Pulse</h2>
-            <figure>
-                <img src="images/festival.webp" alt="Crowd enjoying the Edinburgh Fringe Festival" loading="lazy" width="600" height="400">
-                <figcaption class="visually-hidden">Fringe Festival crowd scene</figcaption>
-            </figure>
+        </section>
+        <section class="festivals">
+            <h2>Festivals - Edinburgh's Cultural Pulse</h2>
+            <div>
+                <img src="images/festival.webp" alt="Fringe Festival" loading="lazy">
+            </div>
             <div>
                 <p>Edinburgh is globally celebrated as the Festival City, home to some of the world’s most iconic
                     cultural events. At the heart of this vibrant scene is the Edinburgh Festival Fringe, the largest
@@ -98,27 +92,26 @@
             </div>
         </section>
 
-        <section class="calendar-container" aria-labelledby="calendar-heading">
-            <h2 id="calendar-heading">Event Calendar</h2>
+        <div class="calendar-container">
             <div id="calendar"></div>
-          </section>
+        </div>
 
-          <section class="visits-container" aria-labelledby="visits-heading">
-            <h2 id="visits-heading">Visitor Info</h2>
+        <div class="visits-container">
             <div class="sidebar-message">
-              <p>
-                <span class="visits-label">Number of Page Visits: </span>
-                <span class="visits" aria-live="polite"></span>
-              </p>
-              <p class="last-visit-message"></p>
+                <p>
+                    <span class="visits-label">Number of Page Visits: </span>
+                    <span class="visits"></span>
+                </p>
+                <p class="last-visit-message"></p>
             </div>
-          </section>
+        </div>
 
-          <section class="member-cards" aria-labelledby="members-heading">
-            <h2 id="members-heading">Places of Interest</h2>
+        <section class="member-cards">
+            <h2>Places of Interest</h2>
             <div class="json-cards"></div>
-          </section>
-        </main>
+        </section>
+        
+    </main>
 
     <footer>
         <p>Contact Us: Phone:0123-456-7890</p>
