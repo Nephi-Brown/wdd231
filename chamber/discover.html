@@ -25,12 +25,13 @@
     <script src="scripts/wayfinder.js" defer></script>
     <script src="scripts/localstorage.js" defer></script>
     <script src="scripts/calendar.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
 </head>
 
 <body>
     <header>
         <img src="images/edlogo.webp" alt="Nephi" loading="lazy" width="80" height="80">
-        <h1>Edinburgh Chamber of Commerce: Discover</h1>
+        <p>Edinburgh Chamber of Commerce: Discover</p>
     </header>
     <div class="nav-section">
         <button id="menu" aria-label="Toggle navigation menu"></button>
@@ -49,6 +50,7 @@
     </nav>
 
     <main>
+        <h1><font style="font-size:0px">Edinburgh Chamber of Commerce: Discover</font></h1>
         <section class="video">
             <h2>Facts About Edinburgh</h2>
             <div class="video-wrapper">
@@ -104,33 +106,11 @@
             </div>
         </div>
 
-        <div class="gallery">
-            <figure>
-                <img src="images/awards.webp" alt="Business Awards" loading="lazy" width="600" height="351">
-                <div class="label">Business Awards</div>
-            </figure>
-            <figure>
-                <img src="images/yorchestra.webp" alt="Orchestra" loading="lazy" width="600" height="351">
-                <div class="label">Youth Orchestra</div>
-            </figure>
-            <figure>
-                <img src="images/theatre.webp" alt="Festival Theatre" loading="lazy" width="600" height="351">
-                <div class="label">Festival Theatre</div>
-            </figure>
-            <figure>
-                <img src="images/artmuseum.webp" alt="Art Museum" loading="lazy" width="600" height="351">
-                <div class="label">Art Museum</div>
-            </figure>
-            <figure>
-                <img src="images/museum.webp" alt="Museum" loading="lazy" width="600" height="351">
-                <div class="label">Natural History Museum</div>
-            </figure>
-            <figure>
-                <img src="images/dance.webp" alt="Dance" loading="lazy" width="600" height="351">
-                <div class="label">Scottish Dancing</div>
-            </figure>
-        </div>
-
+        <section class="member-cards">
+            <h2>Places of Interest</h2>
+            <div class="json-cards"></div>
+        </section>
+        
     </main>
 
     <footer>

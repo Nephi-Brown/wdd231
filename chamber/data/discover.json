@@ -1,0 +1,60 @@
+{
+    "members": [
+      {
+        "name": "The Old Town Bookshop",
+        "address": "21 Princes St, Edinburgh EH2 2AN",
+        "description": "A historic bookstore offering rare and contemporary Scottish literature.",
+        "image": "images/bookstore.webp",
+        "url": "https://www.tripadvisor.co.uk/Attraction_Review-g186525-d7808501-Reviews-The_Old_Town_Bookshop-Edinburgh_Scotland.html"
+      },
+      {
+        "name": "Edinbrugh Castle",
+        "address": "18 Royal Mile, Edinburgh EH1 1RF",
+        "description": "Edinburgh Castle is one of the most exciting historic sites in Western Europe. Set in the heart of Scotland's dynamic capital city, it is sure to capture your imagination..",
+        "image": "images/bookstore.webp",
+        "url": "https://www.edinburghcastle.scot/"
+      },
+      {
+        "name": "Scots Monument",
+        "address": "90 George St, Edinburgh EH2 3DF",
+        "description": "Dedicated to Sir Walter Scott, it is one of the largest monuments to a writer anywhere in the world.",
+        "image": "images/monument.webp",
+        "url": "https://www.edinburghmuseums.org.uk/venue/scott-monument"
+      },
+      {
+        "name": "Mary's Close Edinburgh",
+        "address": "10 Castlehill, Edinburgh EH1 2NG",
+        "description": "Discover authentic truths about Edinburgh's dark past, and find out what it was really like for the people who lived, worked, and died on the Close.",
+        "image": "images/mary.webp",
+        "url": "https://www.realmarykingsclose.com/"
+      },
+      {
+        "name": "Festival Theatre",
+        "address": "45 Leith Walk, Edinburgh EH6 5HB",
+        "description": "Designed as Scotland's premier dance and opera house in 1994, the stage is the largest in Scotland.",
+        "image": "images/theatre.webp",
+        "url": "https://www.capitaltheatres.com/"
+      },
+      {
+        "name": "Edinbrugh Art Museum",
+        "address": "12 Green Lane, Edinburgh EH3 6TD",
+        "description": "The National Galleries of Scotland consists of three galleries in the very heart of Edinburgh.",
+        "image": "images/artmuseum.webp",
+        "url": "https://www.nationalgalleries.org/"
+      },
+      {
+        "name": "National Museum of Scotland",
+        "address": "88 North Bridge, Edinburgh EH1 1SD",
+        "description": "There is a great selection of Scottish history, natural history and touring exhibitions.",
+        "image": "images/museum.webp",
+        "url": "https://www.nms.ac.uk/"
+      },
+      {
+        "name": "Edinbrugh Fringe Festival",
+        "address": "30 Queen St, Edinburgh EH2 1JX",
+        "description": "For three weeks in August, Edinburgh welcomes an explosion of creative energy from around the globe.",
+        "image": "images/edinbrughfringe.webp",
+        "url": "https://www.edfringe.com/"
+      }
+    ]
+  }

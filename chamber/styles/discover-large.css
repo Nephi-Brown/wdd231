@@ -102,42 +102,23 @@
         margin-bottom: 40px;
     }
 
-    .gallery { 
-        grid-column: 2;
-        grid-row: 1/ span 4;
-        margin-left: 15%;
-        margin-right: auto;
+    @media screen and (min-width: 1025px) {
+        .member-card img:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+            border: 7px solid royalblue;
+            box-shadow: 7px 10px 10px rgba(4, 191, 11, 0.942);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
     }
 
-    .gallery figure {
-        width: 100%;        
-        height: auto;
-        margin: 20px;
-        padding: 2rem;
-        background: #fff;
-        border-radius: 15px 150px;
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        flex-direction: row;
-    }
-
-    .gallery figure img {
-        width: 100%;
-        height: auto;
-        max-width: 1500px;
-        margin-bottom: 0.5rem;
-        gap: 1rem;
-        flex-direction: row;
-    }
-
-    .gallery .label {
-        flex-direction: row;
-    }
-
-    .gallery figure:hover {
-        transform: scale(1.05);
-        cursor: pointer;
-        border: 7px solid royalblue;
-        box-shadow: 7px 10px 10px rgba(4, 191, 11, 0.942);
+    @media screen and (min-width: 1025px) {
+        .json-cards {
+            grid-template-areas:
+                "card1 card2 card3 card4"
+                "card5 card6 card7 card8";
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 
 }
