@@ -5,7 +5,7 @@
         "address": "21 Princes St, Edinburgh EH2 2AN",
         "description": "A historic bookstore offering rare and contemporary Scottish literature.",
         "image": "images/bookstore.webp",
-        "url": "https://www.tripadvisor.co.uk/Attraction_Review-g186525-d7808501-Reviews-The_Old_Town_Bookshop-Edinburgh_Scotland.html"
+        "url": "https://www.tripadvisor.co.uk/"
       },
       {
         "name": "Edinbrugh Castle",
@@ -19,7 +19,7 @@
         "address": "90 George St, Edinburgh EH2 3DF",
         "description": "Dedicated to Sir Walter Scott, it is one of the largest monuments to a writer anywhere in the world.",
         "image": "images/monument.webp",
-        "url": "https://www.edinburghmuseums.org.uk/venue/scott-monument"
+        "url": "https://www.edinburghmuseums.org.uk"
       },
       {
         "name": "Mary's Close Edinburgh",
