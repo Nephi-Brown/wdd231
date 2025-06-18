@@ -38,6 +38,12 @@ header p {
   position: relative;
 }
 
+.navigation a:hover {
+  cursor: pointer;
+  color: #3BFF38;
+  background-color: gray;
+}
+
 #menu {
   display: block;
   font-size: 2rem;
@@ -151,7 +157,7 @@ header p {
 }
 
 .breadcrumb a {
-  color: rgb(0, 0, 0);
+  color: rgb(20, 45, 205);
   text-decoration: none; 
   margin-right: 10px;
 }
@@ -241,6 +247,13 @@ h1 {
   height: auto;
   margin-bottom: 0.75rem;
   border-radius: 8px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 /* Form */

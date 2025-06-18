@@ -1,5 +1,13 @@
 // media.js
 
+function generateStars(rating) {
+  const fullStar = '★';
+  const emptyStar = '☆';
+  const filled = fullStar.repeat(rating || 0);
+  const empty = emptyStar.repeat(5 - (rating || 0));
+  return `<span class="stars">${filled}${empty}</span>`;
+}
+
 const DataModule = (() => {
   async function fetchRemoteData() {
     try {
@@ -10,7 +18,9 @@ const DataModule = (() => {
     } catch (error) {
       console.error('Error loading JSON:', error);
       const displayArea = document.getElementById('display-area');
-      displayArea.innerHTML = '<p style="color:red; text-align:center;">Could not load content.</p>';
+      if (displayArea) {
+        displayArea.innerHTML = '<p style="color:red; text-align:center;">Could not load content.</p>';
+      }
       return [];
     }
   }
@@ -34,16 +44,10 @@ const DataModule = (() => {
 })();
 
 const RenderModule = (() => {
-  function generateStars(rating) {
-    const fullStar = '★';
-    const emptyStar = '☆';
-    const filled = fullStar.repeat(rating || 0);
-    const empty = emptyStar.repeat(5 - (rating || 0));
-    return `<span class="stars">${filled}${empty}</span>`;
-  }
-
   function renderCards(items, viewType = 'grid') {
     const container = document.getElementById('display-area');
+    if (!container) return;
+
     container.innerHTML = '';
 
     const wrapper = document.createElement('div');
@@ -76,13 +80,13 @@ const RenderModule = (() => {
   };
 })();
 
-
 const ModalModule = (() => {
   const modal = document.getElementById("modal");
   const image = document.getElementById("modal-image");
   const title = document.getElementById("modal-title");
   const category = document.getElementById("modal-category");
   const review = document.getElementById("modal-review");
+  const rating = document.getElementById("modal-rating"); // NEW
   const closeBtn = document.getElementById("close-modal");
 
   function attachToCard(card, item, imgSrc) {
@@ -91,6 +95,7 @@ const ModalModule = (() => {
       title.textContent = item.title;
       category.textContent = `Category: ${item.category}`;
       review.textContent = item.review;
+      rating.innerHTML = generateStars(item.rating); // NEW
       modal.classList.remove("hidden");
     });
   }
@@ -143,29 +148,40 @@ document.addEventListener('DOMContentLoaded', async () => {
     RenderModule.renderCards(shuffled, view);
   };
 
-  gridBtn.addEventListener('click', () => {
-    StorageModule.setViewMode('grid');
-    render();
-  });
+  if (gridBtn) {
+    gridBtn.addEventListener('click', () => {
+      StorageModule.setViewMode('grid');
+      render();
+    });
+  }
 
-  listBtn.addEventListener('click', () => {
-    StorageModule.setViewMode('list');
-    render();
-  });
+  if (listBtn) {
+    listBtn.addEventListener('click', () => {
+      StorageModule.setViewMode('list');
+      render();
+    });
+  }
 
-  /*form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const formData = new FormData(form);
-    const newReview = {
-      title: formData.get('title'),
-      category: formData.get('category'),
-      review: formData.get('review')
-    };
-    DataModule.saveLocalReview(newReview);
-    combined.push(newReview);
-    render();
-    form.reset();
-  });*/
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const review = {
+        title: formData.get('title'),
+        category: formData.get('category'),
+        review: formData.get('review'),
+        rating: formData.get('rating')
+      };
+
+      const saved = JSON.parse(localStorage.getItem('userReviews')) || [];
+      saved.push(review);
+      localStorage.setItem('userReviews', JSON.stringify(saved));
+
+      const query = new URLSearchParams(review).toString();
+      window.location.href = `review-confirmation.html?${query}`;
+    });
+  }
 
   render();
 });

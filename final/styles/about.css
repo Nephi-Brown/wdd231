@@ -126,6 +126,12 @@
     gap: 1rem;
   }
 
+  .navigation a:hover {
+    cursor: pointer;
+    color: #3BFF38;
+    background-color: gray;
+  }
+
   .close-button {
     font-size: 1.5rem;
     cursor: pointer;
@@ -143,7 +149,7 @@
   }
   
   .breadcrumb a {
-    color: rgb(0, 0, 0);
+    color: rgb(20, 45, 205);
     text-decoration: none; 
     margin-right: 10px;
   }
