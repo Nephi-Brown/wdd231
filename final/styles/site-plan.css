@@ -1,62 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 :root {
-  --primary-color: #0F0F0F;          
-  --secondary-color: #946800;        
-
-  --bg-text-color: var(--secondary-color);
+  --primary-color: #1A1A1A;
+  --secondary-color: #946800;
   --headline-color: #ffffff;
-
   --heading-font: "Roboto", sans-serif;
   --paragraph-font: "Roboto", sans-serif;
-
-  --step--2: clamp(0.63rem, calc(0.72rem + -0.11vw), 0.69rem);
-  --step--1: clamp(0.83rem, calc(0.83rem + 0.02vw), 0.84rem);
-  --step-0: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
-  --step-1: clamp(1.2rem, calc(1.1rem + 0.52vw), 1.5rem);
-  --step-2: clamp(1.44rem, calc(1.25rem + 0.97vw), 2rem);
-  --step-3: clamp(1.73rem, calc(1.4rem + 1.63vw), 2.66rem);
-  --step-4: clamp(2.07rem, calc(1.56rem + 2.57vw), 3.55rem);
-  --step-5: clamp(2.49rem, calc(1.71rem + 3.91vw), 4.74rem);
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
 }
 
 body {
   max-width: 120rem;
   margin: 0 auto;
-  font-size: var(--step-2);
+  font-size: 1.6rem;
   text-align: center;
   font-family: var(--paragraph-font);
   line-height: 1.5;
   background-color: #fff0e0;
-
-  background-image: url("data:image/svg+xml,%3Csvg ... %3E%3C/svg%3E");
-
-  & p {
-    padding: 1em;
-  }
 }
 
 h1 {
   color: var(--primary-color);
-  font-size: var(--step-4);
+  font-size: 3rem;
   font-family: var(--heading-font);
 }
 
-:where(h2, h3, h4, h5, h6) {
+h2, h3, h4 {
   font-family: var(--heading-font);
   color: var(--primary-color);
-  font-size: var(--step-3);
 }
 
 h2 {
@@ -70,37 +50,40 @@ header {
   text-align: center;
   background-color: var(--secondary-color);
   font-family: var(--heading-font);
-  margin-block-end: 2rem;
+  margin-bottom: 2rem;
 }
 
-header :where(h1, h2) {
+header h1, header h2 {
   color: #fff;
-  text-decoration: none;
 }
 
 section {
-  margin-block-end: 3rem;
+  margin-bottom: 3rem;
   border-top: 5px solid var(--secondary-color);
   border-bottom: 5px solid var(--secondary-color);
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(2rem);
   box-shadow: 3px 5px 5rem 5px #e7e7e7c2;
-  padding-block-start: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 ul {
   list-style: none;
   text-align: left;
-  padding-inline: 2rem;
-  margin-inline-start: 4rem;
+  padding: 0 2rem;
+}
 
-  & ::marker {
-    content: "⚡️";
-  }
+ul li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
 
-  & li {
-    margin-block-end: 1rem;
-  }
+ul li::before {
+  content: "⚡️";
+  position: absolute;
+  left: 0;
 }
 
 .client-logo img {
@@ -113,7 +96,7 @@ ul {
 .colors th {
   color: #fff;
   background-color: var(--secondary-color);
-  padding-block: 1rem;
+  padding: 1rem;
 }
 
 .colors td {
@@ -135,9 +118,6 @@ p.coloured {
   color: #fff;
 }
 
-.page1 { grid-area: page1; }
-.page2 { grid-area: page2; }
-
 .placeholder-box {
   background-color: var(--secondary-color);
   border-radius: 5px;
@@ -146,23 +126,24 @@ p.coloured {
   display: grid;
   gap: 2rem;
   color: #ffffff;
+  padding: 1rem;
 }
 
 .placeholder-box img {
   width: 100%;
+  height: auto;
 }
 
 footer {
   text-align: center;
-  font-size: var(3); 
+  font-size: 1.4rem;
   font-weight: bold;
-  background-color: var(--secondary-color); 
-  color: #fff; 
-  font-family: var(--heading-font); 
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-family: var(--heading-font);
   width: 100%;
+  padding: 1rem;
   margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 15px;
 }
 
 footer p {
