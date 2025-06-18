@@ -120,6 +120,12 @@
     padding: 0.5rem;
   }
   
+  .nav-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
   .close-button {
     font-size: 1.5rem;
     cursor: pointer;

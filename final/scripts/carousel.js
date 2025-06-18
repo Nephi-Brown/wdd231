@@ -16,8 +16,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             const img = document.createElement('img');
             img.src = `images/${imgName}`;
             img.alt = `Media image ${index + 1}`;
+            img.loading = 'lazy'; // ✅ lazy load here
             img.classList.add('carousel-image');
-            img.style.opacity = index === 0 ? '1' : '0'; // First image visible
+            img.style.opacity = index === 0 ? '1' : '0';
             carousel.appendChild(img);
         });
 
@@ -34,6 +35,4 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     } catch (error) {
         console.error('Carousel error:', error);
-        carousel.innerHTML = '<p style="color:red;">Failed to load carousel images.</p>';
-    }
-});
+        carous

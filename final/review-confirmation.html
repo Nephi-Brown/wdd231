@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Review Confirmation</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="MediaMosaic Review Confirmation Page" />
-  <meta name="author" content="Nephi Brown" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MediaMosaic Review Confirmation Page">
+  <meta name="author" content="Nephi Brown">
   <meta property="og:title" content="MediaMosaic">
   <meta property="og:type" content="website">
   <meta property="og:description" content="WDD 231 - Final Project: Review Confirmation Page by Nephi Brown, Web Development, JavaScript, CSS, HTML, JSON">
   <meta property="og:image" content="https://nephi-brown.github.io/wdd231/final/images/sitelogo.webp">
-  <meta property="og:url" content="https://nephi-brown.github.io/wdd231/final/home.html">
+  <meta property="og:url" content="https://nephi-brown.github.io/wdd231/final/review-confirmation.html">
   <link rel="icon" href="images/favicon.webp" type="image/webp">
-  <link rel="stylesheet" href="styles/normalize.css" />
-  <link rel="stylesheet" href="styles/base.css" />
-  <link rel="stylesheet" href="styles/larger.css" />
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
   <script src="scripts/confirm.js" defer></script>
   <script src="scripts/wayfinder.js" defer></script>
-
 </head>
+
 <body>
   <header>
+    <img src="images/sitelogo.webp" alt="MediaMosaic Logo" class="logo" loading="lazy">
     <p>Thank You for Your Review!</p>
     <div class="nav-section">     
       <button id="menu" aria-label="Toggle navigation menu"></button>
@@ -31,9 +32,13 @@
           <li><a href="about.html" class="nav-link active">About</a></li>
         </ul>
       </nav>
+    </div>
   </header>
-  <nav id="breadcrumb" class="breadcrumb"></nav>
-  
+
+  <nav id="breadcrumb" class="breadcrumb">
+    <a href="/wdd231/chamber/">Home</a>
+  </nav>
+
   <main>
     <h1>Thank You for Your Review!</h1>
     <h2>Submitted Review</h2>
@@ -46,7 +51,4 @@
   <footer>
     <p>&copy; <span id="currentyear"></span> ★ Nephi Brown ★ York, UK</p>
     <p id="lastModified"></p>
-</footer>
-
-</body>
-</html>
+  </footer>
