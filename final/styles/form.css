@@ -1,0 +1,175 @@
+:root {
+    --primary: #1A1A1A;
+    --secondary: #946800;
+    --font: 'Roboto', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font);
+    margin: 0;
+    background-color: #fff;
+    color: var(--primary);
+  }
+
+  main {
+    max-width: 800px;
+    margin: 2rem auto; /* centers horizontally */
+    padding: 2rem;
+    text-align: center;
+  }
+  
+
+  /* Header */
+  header {
+    background-color: var(--secondary);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  header p {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 1rem; 
+  }
+  
+  /* NAVIGATION */
+  .nav-section {
+    background-color: var(--secondary);
+    position: relative;
+  }
+  
+  .navigation a:hover {
+    cursor: pointer;
+    color: #3BFF38;
+    background-color: gray;
+  }
+  
+  #menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    background: none;
+    color: rgb(255, 255, 255); /* To make the X green */
+    cursor: pointer;
+    margin-top: 1rem;
+    align-self: center;
+    position: static; /* Remove absolute positioning */
+  }
+  
+  #menu::before {
+    content: "☰";
+  }
+  
+  #menu.show::before {
+    content: "❎";
+  }
+  
+  .header-nav {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: var(--secondary);
+  }
+  
+  .navigation {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navigation.show {
+    display: flex;
+  }
+  
+  .navigation li {
+    display: block;
+  }
+  
+  .navigation a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navigation a.active {
+    background-color: var(--primary);
+    border-bottom: 2px solid white;
+  }
+  
+  .nav-link {
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+  
+  .close-button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: red;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  
+  .breadcrumb {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 20px;
+  }
+  
+  .breadcrumb a {
+    color: rgb(20, 45, 205);
+    text-decoration: none; 
+    margin-right: 10px;
+  }
+  
+  .breadcrumb span {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  /* Headings and layout */
+  h1 {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  h1 {
+    display: none;
+  }
+
+  /* Footer */
+  footer {
+    background-color: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive for small screen (base size) */
+  @media (max-width: 767px) {
+    #menu {
+      display: block;
+    }
+  }
+  

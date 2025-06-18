@@ -1,0 +1,30 @@
+@media (min-width: 768px) {    
+    #menu {
+      display: none;
+    }
+    
+    header p {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-left: 1rem; 
+    }
+  
+    .navigation {
+      display: flex !important;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--secondary);
+    }
+  
+    .navigation li {
+      display: inline;
+      margin: 0 1rem;
+    }
+    
+  .menu {
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+  }
+}

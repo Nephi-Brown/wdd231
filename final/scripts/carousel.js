@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const carousel = document.querySelector('.profile-carousel');
 
     try {
-        const response = await fetch('data/media.json');
+        const response = await fetch('data/hero.json');
         if (!response.ok) throw new Error('Failed to load carousel images');
         const data = await response.json();
         const images = data.items.map(item => item.image).filter(Boolean);

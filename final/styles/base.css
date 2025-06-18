@@ -35,7 +35,6 @@ body {
   display: none;
 }
 
-
 /* Header */
 header {
   background-color: var(--secondary);
@@ -75,11 +74,11 @@ header p {
   font-weight: bold;
   border: none;
   background: none;
-  color: rgb(255, 255, 255); /* To make the X green */
+  color: rgb(255, 255, 255);
   cursor: pointer;
   margin-top: 1rem;
   align-self: center;
-  position: static; /* Remove absolute positioning */
+  position: static;
 }
 
 #menu::before {
@@ -202,9 +201,6 @@ header p {
 h1 {
   text-align: center;
   margin: 1rem 0;
-}
-
-h1 {
   display: none;
 }
 
@@ -254,7 +250,6 @@ h1 {
   flex: 1;
 }
 
-/* Card styling */
 .card {
   background-color: #f9f9f9;
   border: 1px solid var(--primary);
@@ -281,33 +276,54 @@ h1 {
   cursor: pointer;
 }
 
-/* Form */
-form {
+/* ✅ Clean and Centered Review Form */
+#review-form {
   background-color: var(--secondary);
   color: white;
-  padding: 1rem;
-  border-radius: 8px;
-  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-form label {
+#review-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#review-form label {
   display: block;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
-form button {
-  background-color: var(--primary);
-  color: white;
-  padding: 0.5rem 1rem;
+#review-form input,
+#review-form select,
+#review-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
   border: none;
-  cursor: pointer;
   border-radius: 4px;
 }
 
+#review-form button {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* Star Rating */
 .star-rating {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: left;
+  justify-content: center;
 }
 
 .star-rating input {
@@ -344,5 +360,9 @@ footer {
 @media (max-width: 767px) {
   #menu {
     display: block;
+  }
+
+  #review-form {
+    padding: 1rem;
   }
 }
