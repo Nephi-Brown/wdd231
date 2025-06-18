@@ -1,14 +1,8 @@
-// media.js
+// Define a global app namespace
+window.MediaMosaic = window.MediaMosaic || {};
 
-function generateStars(rating) {
-  const fullStar = '★';
-  const emptyStar = '☆';
-  const filled = fullStar.repeat(rating || 0);
-  const empty = emptyStar.repeat(5 - (rating || 0));
-  return `<span class="stars">${filled}${empty}</span>`;
-}
-
-const DataModule = (() => {
+// Data handling module
+MediaMosaic.DataModule = (() => {
   async function fetchRemoteData() {
     try {
       const response = await fetch('data/media.json');
@@ -43,7 +37,16 @@ const DataModule = (() => {
   };
 })();
 
-const RenderModule = (() => {
+// Rendering module
+MediaMosaic.RenderModule = (() => {
+  function generateStars(rating) {
+    const fullStar = '★';
+    const emptyStar = '☆';
+    const filled = fullStar.repeat(rating || 0);
+    const empty = emptyStar.repeat(5 - (rating || 0));
+    return `<span class="stars">${filled}${empty}</span>`;
+  }
+
   function renderCards(items, viewType = 'grid') {
     const container = document.getElementById('display-area');
     if (!container) return;
@@ -68,7 +71,7 @@ const RenderModule = (() => {
         </div>
       `;
 
-      ModalModule.attachToCard(card, item, imgSrc);
+      MediaMosaic.ModalModule.attachToCard(card, item, imgSrc);
       wrapper.appendChild(card);
     });
 
@@ -77,16 +80,18 @@ const RenderModule = (() => {
 
   return {
     renderCards,
+    generateStars, // Needed for modal
   };
 })();
 
-const ModalModule = (() => {
+// Modal handling module
+MediaMosaic.ModalModule = (() => {
   const modal = document.getElementById("modal");
   const image = document.getElementById("modal-image");
   const title = document.getElementById("modal-title");
   const category = document.getElementById("modal-category");
   const review = document.getElementById("modal-review");
-  const rating = document.getElementById("modal-rating"); // NEW
+  const rating = document.getElementById("modal-rating");
   const closeBtn = document.getElementById("close-modal");
 
   function attachToCard(card, item, imgSrc) {
@@ -95,12 +100,15 @@ const ModalModule = (() => {
       title.textContent = item.title;
       category.textContent = `Category: ${item.category}`;
       review.textContent = item.review;
-      rating.innerHTML = generateStars(item.rating); // NEW
+      rating.innerHTML = `<strong>Rating:</strong> ${MediaMosaic.RenderModule.generateStars(item.rating)}`;
       modal.classList.remove("hidden");
     });
   }
 
-  closeBtn.addEventListener("click", () => modal.classList.add("hidden"));
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => modal.classList.add("hidden"));
+  }
+
   window.addEventListener("click", e => {
     if (e.target === modal) modal.classList.add("hidden");
   });
@@ -110,7 +118,8 @@ const ModalModule = (() => {
   };
 })();
 
-const StorageModule = (() => {
+// Local storage for view preference
+MediaMosaic.StorageModule = (() => {
   function getViewMode() {
     return localStorage.getItem('view') || 'grid';
   }
@@ -125,39 +134,41 @@ const StorageModule = (() => {
   };
 })();
 
-function shuffleArray(array) {
+// Utility: shuffle array
+MediaMosaic.shuffleArray = function (array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
   }
   return array;
-}
+};
 
+// DOMContentLoaded logic
 document.addEventListener('DOMContentLoaded', async () => {
   const form = document.getElementById('review-form');
   const gridBtn = document.getElementById('grid');
   const listBtn = document.getElementById('list');
 
-  const remoteData = await DataModule.fetchRemoteData();
-  const localReviews = DataModule.loadLocalReviews();
+  const remoteData = await MediaMosaic.DataModule.fetchRemoteData();
+  const localReviews = MediaMosaic.DataModule.loadLocalReviews();
   let combined = [...remoteData, ...localReviews];
 
   const render = () => {
-    const view = StorageModule.getViewMode();
-    const shuffled = shuffleArray([...combined]).slice(0, 15);
-    RenderModule.renderCards(shuffled, view);
+    const view = MediaMosaic.StorageModule.getViewMode();
+    const shuffled = MediaMosaic.shuffleArray([...combined]).slice(0, 15);
+    MediaMosaic.RenderModule.renderCards(shuffled, view);
   };
 
   if (gridBtn) {
     gridBtn.addEventListener('click', () => {
-      StorageModule.setViewMode('grid');
+      MediaMosaic.StorageModule.setViewMode('grid');
       render();
     });
   }
 
   if (listBtn) {
     listBtn.addEventListener('click', () => {
-      StorageModule.setViewMode('list');
+      MediaMosaic.StorageModule.setViewMode('list');
       render();
     });
   }
@@ -165,7 +176,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-
       const formData = new FormData(form);
       const review = {
         title: formData.get('title'),
@@ -174,9 +184,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         rating: formData.get('rating')
       };
 
-      const saved = JSON.parse(localStorage.getItem('userReviews')) || [];
-      saved.push(review);
-      localStorage.setItem('userReviews', JSON.stringify(saved));
+      MediaMosaic.DataModule.saveLocalReview(review);
+      combined.push(review);
 
       const query = new URLSearchParams(review).toString();
       window.location.href = `review-confirmation.html?${query}`;
