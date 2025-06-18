@@ -2,53 +2,63 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" 
-  content="wdd 231- MediaMosaic: Home, Reviews and updates on games, movies, TV shows, and books." />
+  content="wdd 231- MediaMosaic: Home, Reviews and updates on games, movies, TV shows, and books.">
   <meta name="author" content="Nephi Brown">
   <title>MediaMosaic</title>
   <meta property="og:title" content="MediaMosaic">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="WDD 231 - Final Project: Home Page by Nephi Brown, Web Development, JavaScript, CSS, HTML, JSON">
-    <meta property="og:image" content="https://nephi-brown.github.io/wdd231/final/images/sitelogo.png">
-    <meta property="og:url" content="https://nephi-brown.github.io/wdd231/final/home.html">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="WDD 231 - Final Project: Home Page by Nephi Brown, Web Development, JavaScript, CSS, HTML, JSON">
+  <meta property="og:image" content="https://nephi-brown.github.io/wdd231/final/images/sitelogo.webp">
+  <meta property="og:url" content="https://nephi-brown.github.io/wdd231/final/home.html">
+  <link rel="icon" href="images/favicon.webp" type="image/webp">
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/base.css" />
-  <script type="module" src="scripts/media.js" defer></script>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/media.js" defer></script>
   <script src="scripts/getdates.js" defer></script>
   <script src="scripts/hambutton.js" defer></script>
   <script src="scripts/navigate.js" defer></script>
+  <script src="scripts/wayfinder.js" defer></script>
+  <script src="scripts/confirm.js" defer></script>
 </head>
 
 <body>
   <header>
-    <img src="images/sitelogo.png" alt="MediaMosaic Logo" class="logo" />
-    <h1>MediaMosaic</h1>
-    <nav class="nav-desktop">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="reviews.html" class="nav-link">Reviews</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-    </nav>
-    <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-  </header>
-
-  <nav id="mobile-menu" class="hidden">
-    <ul>
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li><a href="reviews.html" class="nav-link">Reviews</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
-    </ul>
+    <img src="images/sitelogo.webp" alt="MediaMosaic Logo" class="logo">
+    <p>MediaMosaic</p>
+    <div class="nav-section">     
+      <button id="menu" aria-label="Toggle navigation menu"></button>
+      <nav class="header-nav">
+        <ul class="navigation">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+    <nav id="breadcrumb" class="breadcrumb">
+      <a href="/wdd231/chamber/">Home</a>
   </nav>
 
   <main>
+    <h1>MediaMosaic</h1>
+    <div class="menu">
+      <h2>Hottest New Reviews!</h2>
+      <button id="grid">⏹️Grid</button>
+      <button id="list">📄List</button>
+  </div>  
+  
     <section id="display-area">
     </section>
 
-    <form id="review-form">
+    <form id="review-form" action="review-confirmation.html" method="GET">
       <h2>Submit Your Review</h2>
       <label>
-        Title: <input name="title" required />
+        Title: <input name="title" required>
       </label>
       <label>
         Category:
@@ -71,5 +81,14 @@
     <p id="lastModified"></p>
 </footer>
 
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-button" id="close-modal">&times;</span>
+    <img id="modal-image" src="" alt="" loading="lazy">
+    <h3 id="modal-title"></h3>
+    <p id="modal-category"></p>
+    <p id="modal-review"></p>
+  </div>
+</div>
 </body>
 </html>
