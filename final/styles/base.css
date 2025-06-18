@@ -11,6 +11,31 @@ body {
   color: var(--primary);
 }
 
+.banner {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  font-size: 1rem;
+}
+
+.banner button {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+
 /* Header */
 header {
   background-color: var(--secondary);

@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MediaMosaic - Review Confirmation</title>
+  <title>MediaMosaic - Member Confirmation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MediaMosaic Review Confirmation Page">
+  <meta name="description" content="MediaMosaic Member Confirmation Page">
   <meta name="author" content="Nephi Brown">
   <meta property="og:title" content="MediaMosaic">
   <meta property="og:type" content="website">
-  <meta property="og:description" content="WDD 231 - Final Project: Review Confirmation Page by Nephi Brown, Web Development, JavaScript, CSS, HTML, JSON">
+  <meta property="og:description" content="WDD 231 - Final Project: Member Confirmation Page by Nephi Brown, Web Development, JavaScript, CSS, HTML, JSON">
   <meta property="og:image" content="https://nephi-brown.github.io/wdd231/final/images/sitelogo.webp">
-  <meta property="og:url" content="https://nephi-brown.github.io/wdd231/final/review-confirmation.html">
+  <meta property="og:url" content="https://nephi-brown.github.io/wdd231/final/member-confirmation.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -18,15 +18,16 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
-  <script src="scripts/confirm.js" defer></script>
+  <script src="scripts/memberconfirm.js" defer></script>
   <script src="scripts/wayfinder.js" defer></script>
+  <script src="scripts/hambutton.js" defer></script>
   <script src="scripts/navigate.js" defer></script>
 </head>
 
 <body>
   <header>
-    <img src="images/sitelogo.webp" alt="MediaMosaic Logo" class="logo" loading="lazy">
-    <p>Thank You for Your Review!</p>
+    <img src="images/sitelogo.webp" alt="MediaMosaic Logo" class="logo" loading="lazy" />
+    <p>Welcome to MediaMosaic!</p>
     <div class="nav-section">     
       <button id="menu" aria-label="Toggle navigation menu"></button>
       <nav class="header-nav">
@@ -44,11 +45,14 @@
   </nav>
 
   <main>
-    <h1>MediaMosaic - Review Confirmation</h1>
-    <h2>Submitted Review</h2>
-    <p><strong>Title:</strong> <span id="confirm-title"></span></p>
-    <p><strong>Category:</strong> <span id="confirm-category"></span></p>
-    <p><strong>Review:</strong> <span id="confirm-review"></span></p>
+    <h1>MediaMosaic - Member Confirmation</h1>
+    <h2>Your Application Details</h2>
+    <p><strong>First Name:</strong> <span id="confirm-firstName"></span></p>
+    <p><strong>Last Name:</strong> <span id="confirm-lastName"></span></p>
+    <p><strong>Email:</strong> <span id="confirm-email"></span></p>
+    <p><strong>Username:</strong> <span id="confirm-username"></span></p>
+    <p><strong>Membership Tier:</strong> <span id="confirm-tier"></span></p>
+    <p><strong>Reason for Joining:</strong> <span id="confirm-reason"></span></p>
     <p><strong>Rating:</strong> <span id="confirm-rating"></span></p>
   </main>
 

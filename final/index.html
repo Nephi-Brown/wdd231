@@ -25,10 +25,15 @@
   <script src="scripts/hambutton.js" defer></script>
   <script src="scripts/navigate.js" defer></script>
   <script src="scripts/wayfinder.js" defer></script>
-  <script src="scripts/confirm.js" defer></script>
+  <script src="scripts/banner.js" defer></script>
 </head>
 
 <body>
+  <div id="welcome-banner" class="banner hidden">
+    <p id="welcome-message"></p>
+    <button id="close-banner" aria-label="Close banner">✖</button>
+  </div>
+
   <header>
     <img src="images/sitelogo.webp" alt="MediaMosaic Logo" class="logo">
     <p>MediaMosaic</p>
@@ -37,7 +42,7 @@
       <nav class="header-nav">
         <ul class="navigation">
           <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+          <li><a href="member.html" class="nav-link">member</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
         </ul>
       </nav>
