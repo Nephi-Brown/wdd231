@@ -35,4 +35,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     } catch (error) {
         console.error('Carousel error:', error);
-        carous
+        carousel.innerHTML = '<p style="color:red;">Failed to load carousel images.</p>';
+    }
+});
