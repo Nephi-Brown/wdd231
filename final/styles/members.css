@@ -273,19 +273,20 @@ h1 {
 
 .star-rating label {
   font-size: 2rem;
-  color: #ccc;
+  color: #ccc; /* default grey for unselected stars */
   cursor: pointer;
 }
 
 .star-rating input:checked ~ label,
 .star-rating label:hover,
 .star-rating label:hover ~ label {
-  color: var(--secondary);
+  color: gold; /* highlight selected and hovered stars in gold */
 }
 
+/* Stars on Cards (use current text color) */
 .stars {
   font-size: 1.5rem;
-  color: var(--secondary);
+  color: currentColor; /* inherit from surrounding text color */
 }
 
 /* Footer */
