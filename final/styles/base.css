@@ -95,6 +95,20 @@ header p {
   border-bottom: 2px solid white;
 }
 
+.nav-link {
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.close-button {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: red;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -146,6 +160,11 @@ header p {
   font-weight: bolder;
   font-size: 1.2rem;
   margin-left: 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
 }
 
 /* Headings and layout */

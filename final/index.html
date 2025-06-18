@@ -7,13 +7,14 @@
   <meta name="description" 
   content="wdd 231- MediaMosaic: Home, Reviews and updates on games, movies, TV shows, and books.">
   <meta name="author" content="Nephi Brown">
-  <title>MediaMosaic</title>
+  <title>MediaMosaic – Discover and Review Movies, Games, Shows & Books</title>
   <meta property="og:title" content="MediaMosaic">
   <meta property="og:type" content="website">
   <meta property="og:description" content="WDD 231 - Final Project: Home Page by Nephi Brown, Web Development, JavaScript, CSS, HTML, JSON">
   <meta property="og:image" content="https://nephi-brown.github.io/wdd231/final/images/sitelogo.webp">
   <meta property="og:url" content="https://nephi-brown.github.io/wdd231/final/home.html">
   <link rel="icon" href="images/favicon.webp" type="image/webp">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
@@ -52,7 +53,8 @@
       <button id="list">📄List</button>
   </div>  
   
-    <section id="display-area">
+  <section id="display-area" aria-labelledby="reviews-heading">
+    <h2 id="reviews-heading" class="visually-hidden">Review Cards Section</h2>
     </section>
 
     <form id="review-form" action="review-confirmation.html" method="GET">
@@ -84,8 +86,8 @@
 <div id="modal" class="modal hidden">
   <div class="modal-content">
     <span class="close-button" id="close-modal">&times;</span>
-    <img id="modal-image" src="" alt="" loading="lazy">
-    <h3 id="modal-title"></h3>
+    <img id="modal-image" src="images/placeholder.webp" alt="Modal preview image" loading="lazy">
+    <h3 id="modal-title">Title will appear here</h3>
     <p id="modal-category"></p>
     <p id="modal-review"></p>
   </div>
