@@ -2,6 +2,12 @@
       #menu {
         display: none;
       }
+      
+      header p {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-left: 1rem; 
+      }
     
       .navigation {
         display: flex !important;

@@ -27,7 +27,7 @@ header {
 }
 
 header p {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-left: 1rem; 
 }
@@ -44,7 +44,7 @@ header p {
   font-weight: bold;
   border: none;
   background: none;
-  color: limegreen; /* To make the X green */
+  color: rgb(255, 255, 255); /* To make the X green */
   cursor: pointer;
   margin-top: 1rem;
   align-self: center;
@@ -173,6 +173,10 @@ h1 {
   margin: 1rem 0;
 }
 
+h1 {
+  display: none;
+}
+
 .menu {
   text-align: center;
   margin: 1rem auto;
@@ -260,6 +264,33 @@ form button {
   border: none;
   cursor: pointer;
   border-radius: 4px;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: gold;
+}
+
+.stars {
+  font-size: 1.5rem;
+  color: gold;
 }
 
 /* Footer */

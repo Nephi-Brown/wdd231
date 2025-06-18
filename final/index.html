@@ -36,7 +36,7 @@
         <ul class="navigation">
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="reviews.html" class="nav-link">Reviews</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
         </ul>
       </nav>
     </div>
@@ -74,6 +74,16 @@
       <label>
         Review: <textarea name="review" required></textarea>
       </label>
+      <label>
+        Rating:
+      </label>
+      <div class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5" required><label for="star5" title="5 stars">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">&#9733;</label>
+    </div>
       <button type="submit">Submit</button>
     </form>
   </main>
@@ -86,7 +96,7 @@
 <div id="modal" class="modal hidden">
   <div class="modal-content">
     <span class="close-button" id="close-modal">&times;</span>
-    <img id="modal-image" src="images/placeholder.webp" alt="Modal preview image" loading="lazy">
+    <img id="modal-image" src="images/tempimage.webp" alt="Modal preview image" loading="lazy">
     <h3 id="modal-title">Title will appear here</h3>
     <p id="modal-category"></p>
     <p id="modal-review"></p>

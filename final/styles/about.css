@@ -1,0 +1,198 @@
+:root {
+    --primary: #1A1A1A;
+    --secondary: #946800;
+    --font: 'Roboto', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: var(--primary);
+    text-align: center;
+  }
+  
+  header {
+    background-color: var(--secondary);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  header p {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 1rem; 
+  }
+  
+  /* NAVIGATION */
+  .navigation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  
+  #menu {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  
+  #menu::before {
+    content: "☰";
+  }
+  
+  #menu.show::before {
+    content: "❎";
+  }
+  
+  
+  .header-nav {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: var(--secondary);
+  }
+  
+  .navigation {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navigation.show {
+    display: flex;
+  }
+  
+  /* Show hamburger only on small screens */
+  @media (max-width: 767px) {
+    #menu {
+      display: block;
+    }
+  
+    .header-nav ul {
+      flex-direction: column;
+      display: none;
+    }
+  
+    .header-nav ul.show {
+      display: flex;
+    }
+  }
+  
+  .navigation li {
+    display: block;
+  }
+  
+  .navigation a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navigation a.active {
+    background-color: var(--primary);
+    border-bottom: 2px solid white;
+  }
+  
+  .nav-link {
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+  
+  .close-button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: red;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .breadcrumb {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 20px;
+    text-align: left;
+  }
+  
+  .breadcrumb a {
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+    margin-right: 10px;
+  }
+  
+  .breadcrumb span {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+
+  .profile-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    position: relative; /* keeps images stacked but container in flow */
+  }
+  
+  .profile-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    background-color: transparent;
+    z-index: 1;
+  }
+  
+  .profile-carousel img:first-child {
+    opacity: 1;
+  }
+
+  
+  main {
+    padding: 2rem 1rem;
+  }
+  
+  main section {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    display: none;
+  }
+  
+  footer {
+    background-color: var(--secondary);
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  

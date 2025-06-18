@@ -1,10 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const path = window.location.pathname;
-  const page = path.substring(path.lastIndexOf("/") + 1);
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.nav-link');
+  const currentPath = window.location.pathname.split('/').pop();
 
-  document.querySelectorAll(".nav-link").forEach(link => {
-    if (link.getAttribute("href").includes(page)) {
-      link.classList.add("active");
+  links.forEach(link => {
+    const linkPath = link.getAttribute('href');
+    if (linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
     }
   });
 });

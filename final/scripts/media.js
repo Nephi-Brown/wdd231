@@ -34,6 +34,14 @@ const DataModule = (() => {
 })();
 
 const RenderModule = (() => {
+  function generateStars(rating) {
+    const fullStar = '★';
+    const emptyStar = '☆';
+    const filled = fullStar.repeat(rating || 0);
+    const empty = emptyStar.repeat(5 - (rating || 0));
+    return `<span class="stars">${filled}${empty}</span>`;
+  }
+
   function renderCards(items, viewType = 'grid') {
     const container = document.getElementById('display-area');
     container.innerHTML = '';
@@ -51,6 +59,7 @@ const RenderModule = (() => {
         <div class="card-content">
           <h3>${item.title}</h3>
           <p><strong>Category:</strong> ${item.category}</p>
+          <p><strong>Rating:</strong> ${generateStars(item.rating)}</p>
           <p>${item.review}</p>
         </div>
       `;
@@ -66,6 +75,7 @@ const RenderModule = (() => {
     renderCards,
   };
 })();
+
 
 const ModalModule = (() => {
   const modal = document.getElementById("modal");
