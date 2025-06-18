@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/\b\w/g, (char) => char.toUpperCase());
   
     breadcrumbContainer.innerHTML = `
-      <a href="/wdd231/chamber/">Home</a> &gt;
+      <a href="/wdd231/final/">Home</a> &gt;
       <span>${pageTitle}</span>
     `;
   });

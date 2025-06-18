@@ -1,8 +1,244 @@
 {
     "items": [
-      { "title": "The Legend of Zelda: Tears of the Kingdom", "category": "Game", "review": "An epic adventure with endless exploration and creativity." },
-      { "title": "Dune: Part Two", "category": "Movie", "review": "Stunning visuals and deep world-building in this sci-fi epic." },
-      { "title": "Stranger Things", "category": "TV Show", "review": "Nostalgic, creepy, and thrilling — a must-watch Netflix series." },
-      { "title": "Fourth Wing", "category": "Book", "review": "A gripping fantasy novel with rich characters and intense plot twists." }
+      { 
+        "image": "expedition33.webp",
+        "title": "Clair Obscur: Expedition 33", 
+        "category": "Game", 
+        "review": "A visually stunning and artistically bold RPG that blends surrealist flair with inventive combat." 
+      },
+      { 
+        "image": "splitfiction.webp",
+        "title": "Split Fiction", 
+        "category": "Game", 
+        "review": "A creative narrative experiment that intrigues more than it satisfies, but rewards patience."
+      },
+      { 
+        "image": "wuthering.webp",
+        "title": "Wuthering Waves", 
+        "category": "Game", 
+        "review": "An ambitious open-world gacha game with stylish combat and a strong Genshin-like appeal."
+      },
+      { 
+        "image": "achilles.webp",
+        "title": "Achilles: Legends Untold", 
+        "category": "Game", 
+        "review": "A gritty and satisfying mythological ARPG that punches above its indie weight."
+      },
+      { 
+        "image": "finalfantasy7.webp",
+        "title": "Final Fantasy VII Rebirth", 
+        "category": "Game", 
+        "review": "A masterful reimagining that expands on nostalgia with bold storytelling and epic scale."
+      },
+      { 
+        "image": "civ7.webp",
+        "title": "Civilization VII", 
+        "category": "Game", 
+        "review": "A deep and polished evolution of the franchise, balancing innovation with classic strategy depth."
+      },
+      { 
+        "image": "assassincreed.webp",
+        "title": "Assassin's Creed Shadows", 
+        "category": "Game", 
+        "review": "A fresh, atmospheric take on feudal Japan that reinvigorates the franchise with dual protagonists."
+      },
+      { 
+        "image": "bleach.webp",
+        "title": "Bleach: Rebirth of Souls", 
+        "category": "Game", 
+        "review": "A flashy return for the Bleach universe, though it leans too heavily on fan service over depth."
+      },
+      { 
+        "image": "eldenring.webp",
+        "title": "Elden Ring Nightreign", 
+        "category": "Game", 
+        "review": "A dark and punishing expansion that deepens the lore and challenge of an already legendary world."
+      },
+      { 
+        "image": "zelda.webp",
+        "title": "The Legend of Zelda: Tears of the Kingdom", 
+        "category": "Game", 
+        "review": "An epic adventure with endless exploration and creativity." 
+      },
+      { 
+        "image": "kingsman.webp",
+        "title": "Kingsman: The Golden Circle", 
+        "category": "Movie",  
+        "review": "A chaotic sequel that ups the spectacle but loses some of the original’s charm and wit."
+      },
+      { 
+        "image": "peru.webp",
+        "title": "Paddington in Peru", 
+        "category": "Movie",  
+        "review": "A heartwarming return that continues the series' gentle humor and emotional warmth."
+      },
+      { 
+        "image": "transformers.webp",
+        "title": "Transformers: Rise of the Beasts", 
+        "category": "Movie",  
+        "review": "A visually bombastic ride that manages to inject fresh energy and heart into the franchise."
+      },
+      { 
+        "image": "enola.webp",
+        "title": "Enola Holmes", 
+        "category": "Movie",  
+        "review": "A charming and clever mystery adventure elevated by Millie Bobby Brown’s spirited performance."
+      },
+      { 
+        "image": "thunderbolt.webp",
+        "title": "Thunderbolts*", 
+        "category": "Movie",  
+        "review": "A gritty, ensemble-driven Marvel entry aiming to explore moral ambiguity within its familiar framework."
+      },
+      { 
+        "image": "captainamerica.webp",
+        "title": "Captain America: Brave New World", 
+        "category": "Movie",  
+        "review": "A bold new chapter that redefines legacy and leadership with a grounded, politically charged tone."
+      },
+      { 
+        "image": "everything.webp",
+        "title": "Everything Everywhere All at Once", 
+        "category": "Movie",  
+        "review": "A dazzling multiverse whirlwind that's as emotionally resonant as it is mind-bendingly inventive."
+      },
+      { 
+        "image": "swiss.webp",
+        "title": "Swiss Army Man", 
+        "category": "Movie",  
+        "review": "A surreal and strangely touching tale about loneliness, flatulence, and the human condition."
+      },
+      { 
+        "image": "lilo.webp",
+        "title": "Lilo & Stitch", 
+        "category": "Movie",  
+        "review": "A quirky, tender, and beautifully animated story about family, belonging, and a mischievous alien."
+      },
+      { 
+        "image": "dune.webp",
+        "title": "Dune: Part Two", 
+        "category": "Movie", 
+        "review": "Stunning visuals and deep world-building in this sci-fi epic." 
+      },
+      { 
+        "image": "frieren.webp",
+        "title": "Frieren: Beyond Journey's End", 
+        "category": "TV Show", 
+        "review": "A beautifully reflective fantasy that explores grief, time, and the quiet aftermath of heroism."
+      },
+      { 
+        "image": "loki.webp",
+        "title": "Loki", 
+        "category": "TV Show", 
+        "review": "A time-bending, character-driven Marvel series that mixes chaos with surprising emotional depth."
+      },
+      { 
+        "image": "arrow.webp",
+        "title": "Arrow", 
+        "category": "TV Show", 
+        "review": "A gritty, grounded superhero origin that launched a TV universe with strong action and mixed consistency."
+      },
+      { 
+        "image": "amsterdam.webp",
+        "title": "New Amsterdam", 
+        "category": "TV Show", 
+        "review": "An earnest medical drama that blends idealism with social commentary, sometimes to melodramatic effect."
+      },
+      { 
+        "image": "grandorder.webp",
+        "title": "Fate/Grand Order – Absolute Demonic Front: Babylonia", 
+        "category": "TV Show", 
+        "review": "A visually stunning, lore-heavy fantasy epic that rewards Fate fans with intense battles and grand stakes."
+      },
+      { 
+        "image": "scott.webp",
+        "title": "Scott Pilgrim Takes Off", 
+        "category": "TV Show", 
+        "review": "A self-aware, stylistically bold remix that reimagines the beloved story with fresh twists and heart."
+      },
+      { 
+        "image": "rookie.webp",
+        "title": "The Rookie", 
+        "category": "TV Show", 
+        "review": "A solid procedural boosted by Nathan Fillion’s charm and a relatable take on late-life reinvention."
+      },
+      { 
+        "image": "elementary.webp",
+        "title": "Elementary", 
+        "category": "TV Show", 
+        "review": "A sharp, modern Sherlock Holmes adaptation with compelling chemistry and clever cases."
+      },
+      { 
+        "image": "jujutsu.webp",
+        "title": "Jujutsu Kaisen", 
+        "category": "TV Show",  
+        "review": "A dark, high-octane shonen with spectacular animation and a cast that balances humor with raw intensity."
+      },
+      { 
+        "image": "stranger.webp",
+        "title": "Stranger Things", 
+        "category": "TV Show", 
+        "review": "Nostalgic, creepy, and thrilling — a must-watch Netflix series." 
+      },
+      { 
+        "image": "strangefake.webp",
+        "title": "Fate/Strange Fake", 
+        "category": "Book", 
+        "review": "A wild, unpredictable twist on the Holy Grail War with eccentric Servants and sharp narrative subversion."
+      },
+      { 
+        "image": "chainsaw.webp",
+        "title": "Chainsaw Man", 
+        "category": "Book", 
+        "review": "A brutal, chaotic, and oddly heartfelt ride that defies shonen tropes with dark humor and emotional gut-punches."
+      },
+      { 
+        "image": "harrypotter.webp",
+        "title": "Harry Potter and the Deathly Hallows", 
+        "category": "Book", 
+        "review": "A dark, poignant finale that brings the beloved saga to a dramatic, emotionally satisfying close."
+      },
+      { 
+        "image": "darkprophecy.webp",
+        "title": "The Trials of Apollo - The Dark Prophecy", 
+        "category": "Book", 
+        "review": "A witty and fast-paced continuation that balances mythological fun with Apollo’s awkward, heartfelt redemption."
+      },
+      { 
+        "image": "libriomancer.webp",
+        "title": "Libriomancer", 
+        "category": "Book", 
+        "review": "A clever love letter to books and magic that blends urban fantasy with a geeky, imaginative premise."
+      },
+      { 
+        "image": "skulduggery.webp",
+        "title": "Skulduggery Pleasant – A Mind Full of Murder", 
+        "category": "Book", 
+        "review": "A sharp-tongued, fast-moving supernatural thriller that keeps the wit sharp and the stakes high."
+      },
+      { 
+        "image": "throne.webp",
+        "title": "Throne of Glass", 
+        "category": "Book", 
+        "review": "An addictive fantasy series with a fierce heroine, growing political intrigue, and escalating world-building."
+      },
+      { 
+        "image": "iceandfire.webp",
+        "title": "A Song of Ice and Fire", 
+        "category": "Book", 
+        "review": "A sprawling, morally complex epic filled with rich characters, brutal politics, and unpredictable twists."
+      },
+      { 
+        "image": "7habits.webp",
+        "title": "The 7 Habits of Highly Effective People", 
+        "category": "Book", 
+        "review": "A practical and timeless self-help classic that emphasizes integrity, vision, and proactive living."
+      },
+      { 
+        "image": "fourth.webp",
+        "title": "Fourth Wing", 
+        "category": "Book", 
+        "review": "A gripping fantasy novel with rich characters and intense plot twists." 
+      }
     ]
   }
