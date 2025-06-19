@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
-  <script src="scripts/media.js"></script>
+  <script type="module" src="scripts/media.js"></script>
   <script src="scripts/getdates.js" defer></script>
   <script src="scripts/hambutton.js" defer></script>
   <script src="scripts/navigate.js" defer></script>
@@ -60,9 +60,9 @@
       <button id="list">📄List</button>
   </div>  
   
-  <section id="display-area" aria-labelledby="reviews-heading">
+  <section id="display-area" class="card-container" aria-labelledby="reviews-heading">
     <h2 id="reviews-heading" class="visually-hidden">Review Cards Section</h2>
-    </section>
+  </section>
 
     <form id="review-form" action="review-confirmation.html" method="GET">
       <h2>Submit Your Review</h2>
