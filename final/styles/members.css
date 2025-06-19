@@ -298,6 +298,15 @@ footer {
   margin-top: 2rem;
 }
 
+footer a {
+  color: #FFFFFF;
+  text-decoration: underline; /* Optional: underline for visibility */
+}
+
+footer a:hover {
+  color: #CCCCCC; /* Optional: light gray hover effect */
+}
+
 /* Responsive */
 @media (max-width: 767px) {
   #menu {
